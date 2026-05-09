@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Heart, GitCompareArrows, ShieldCheck, Truck, RotateCcw, Star, Check } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { drones, formatINR } from "@/data/products";
+import { drones, formatINR, type Drone } from "@/data/products";
 
 export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/products/$slug")({
 });
 
 function ProductDetail() {
-  const { drone } = Route.useLoaderData();
+  const { drone } = Route.useLoaderData() as { drone: Drone };
   const [active, setActive] = useState(0);
   const off = Math.round(((drone.mrp - drone.price) / drone.mrp) * 100);
   const gallery = [drone.image, drone.image, drone.image, drone.image];
