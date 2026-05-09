@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { drones, formatINR } from "@/data/products";
 import { Bell, Heart, Package, Settings, BellRing, ArrowDown } from "lucide-react";
 
-export const Route = createFileRoute("/dashboard")({
+export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => ({ meta: [{ title: "Your Dashboard — DroneWallah" }] }),
   component: Dashboard,
 });
