@@ -78,10 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Compare drones, discover accessories, and explore the skies with confidence on DroneWallah." },
       { name: "author", content: "DroneWallah" },
       { property: "og:title", content: "DroneWallah — India's Trusted Drone Marketplace" },
-      { property: "og:description", content: "Compare drones, discover accessories, and explore the skies." },
+      { property: "og:description", content: "Compare drones, discover accessories, and explore the skies with confidence on DroneWallah." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@DroneWallah" },
+      { name: "twitter:title", content: "DroneWallah — India's Trusted Drone Marketplace" },
+      { name: "twitter:description", content: "Compare drones, discover accessories, and explore the skies with confidence on DroneWallah." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e6145d04-1bce-419c-8a44-4be576ebf516/id-preview-c074d4d0--53c1a9f2-8bf7-4414-b7f9-0b4a702fc014.lovable.app-1778411876716.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e6145d04-1bce-419c-8a44-4be576ebf516/id-preview-c074d4d0--53c1a9f2-8bf7-4414-b7f9-0b4a702fc014.lovable.app-1778411876716.png" },
     ],
     links: [
       {
